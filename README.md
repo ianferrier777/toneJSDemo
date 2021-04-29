@@ -2,12 +2,6 @@
 
 A brief demo of getting Tone.js setup with React, Webpack, and Babel.
 
-## Table of Contents
-
-- [Install](#install)
-- [Usage](#usage)
-- [Contributing](#contributing)
-
 ## Install
 
 `npm install` --> installs dependencies for project
