@@ -1,52 +1,24 @@
 # toneJSDemo
 
-This is a long description.
+A brief demo of getting Tone.js setup with React, Webpack, and Babel.
 
 ## Table of Contents
 
-- [Security](#security)
-- [Background](#background)
 - [Install](#install)
 - [Usage](#usage)
-- [API](#api)
 - [Contributing](#contributing)
-
-## Security
-
-### Any optional sections
-
-## Background
-
-### Any optional sections
 
 ## Install
 
-This module depends upon a knowledge of [Markdown]().
-
-```
-```
-
-### Any optional sections
+`npm install`
 
 ## Usage
 
-```
-```
-
-Note: The `license` badge image link at the top of this file should be updated with the correct `:user` and `:repo`.
-
-### Any optional sections
-
-## API
-
-### Any optional sections
-
-## More optional sections
+## Dev Scripts
+`npm run live` --> live-server, using for webpack changes
+`npm run watch` --> webpack watch script
+`npm run build` --> just regular webpack build command
 
 ## Contributing
 
-See [the contributing file](CONTRIBUTING.md)!
-
 PRs accepted.
-
-Small note: If editing the Readme, please conform to the [standard-readme](https://github.com/RichardLitt/standard-readme) specification.
