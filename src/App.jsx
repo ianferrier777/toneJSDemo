@@ -2,12 +2,21 @@ import React from 'react';
 import * as Tone from 'tone';
 
 class App extends React.Component {
-  static helloTone() {
+  constructor() {
+    super();
+    this.state = {};
+    this.helloTone = this.helloTone.bind(this);
+    this.closeEncountersHumans = this.closeEncountersHumans.bind(this);
+    this.closeEncountersAliens = this.closeEncountersAliens.bind(this);
+    this.closeEncountersHumansResponseJam = this.closeEncountersHumansResponseJam.bind(this);
+  }
+
+  helloTone() {
     const synth = new Tone.Synth().toDestination();
     synth.triggerAttackRelease('C4', '8n');
   }
 
-  static closeEncountersHumans() {
+  closeEncountersHumans() {
     const synth2 = new Tone.Synth().toDestination();
     synth2.volume.value = -3;
     const now = Tone.now();
@@ -18,7 +27,7 @@ class App extends React.Component {
     synth2.triggerAttackRelease('C4', '8n', now + 2);
   }
 
-  static closeEncountersAliens() {
+  closeEncountersAliens() {
     const monoSynth = new Tone.MonoSynth().toDestination();
     const now2 = Tone.now();
     monoSynth.triggerAttackRelease('Bb2', '8n', now2);
@@ -28,7 +37,7 @@ class App extends React.Component {
     monoSynth.triggerAttackRelease('Eb2', '8n', now2 + 2);
   }
 
-  static closeEncountersHumansResponseJam() {
+  closeEncountersHumansResponseJam() {
     const synth3 = new Tone.Synth().toDestination();
     synth3.volume.value = -3;
     const monoSynth2 = new Tone.MonoSynth().toDestination();
@@ -38,15 +47,6 @@ class App extends React.Component {
     synth3.triggerAttackRelease('F4', '8n', now3 + 1);
     monoSynth2.triggerAttackRelease('F1', '8n', now3 + 1.5);
     monoSynth2.triggerAttackRelease('C2', '8n', now3 + 2);
-  }
-
-  constructor() {
-    super();
-    this.state = {};
-    this.helloTone = this.helloTone.bind(this);
-    this.closeEncountersHumans = this.closeEncountersHumans.bind(this);
-    this.closeEncountersAliens = this.closeEncountersAliens.bind(this);
-    this.closeEncountersHumansResponseJam = this.closeEncountersHumansResponseJam.bind(this);
   }
 
   render() {
