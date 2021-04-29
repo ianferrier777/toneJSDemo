@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "watch": "webpack -w"
+    "watch": "webpack -w",
+    "live": "live-server"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,7 @@
     "@babel/preset-react": "^7.13.13",
     "@babel/runtime": "^7.13.17",
     "babel-loader": "^8.2.2",
+    "live-server": "^1.2.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "tone": "^14.7.77"
