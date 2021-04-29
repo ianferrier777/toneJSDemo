@@ -17,16 +17,16 @@ module.exports = {
           options: {
             presets: [
               ['@babel/preset-env', {
-                "targets": "defaults"
+                targets: 'defaults',
               }],
-              '@babel/preset-react'
+              '@babel/preset-react',
             ],
             plugins: [
-              '@babel/transform-runtime'
-            ]
-          }
-        }]
-      }
-    ]
-  }
+              '@babel/transform-runtime',
+            ],
+          },
+        }],
+      },
+    ],
+  },
 };
